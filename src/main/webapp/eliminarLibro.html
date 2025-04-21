@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Biblioteca Online</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/agregarLibro.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+<div class="container">
+    <header class = "encabezado">
+        <div class = "logo-nombreEMC">
+            <div class="logo">
+                <img src="img/img_libro.png">
+            </div>
+        </div>
+
+        <p>BIBLIOTECA ONLINE</p>
+    </header>
+
+    <div class="side-main">
+        <aside class = "sidebar">
+            <nav class="menu">
+                <ul>
+                    <li><a href="mostrarLibros.jsp">Mostrar libros</a></li>
+                    <li><a href="agregarLibro.html">Agregar nuevo libro</a></li>
+                    <li><a href="eliminarLibro.html">Eliminar libro</a></li>
+                </ul>
+            </nav>
+
+        </aside>
+
+        <main class="mainContent">
+
+            <div class="form-container">
+                <form action="eliminarLibro" method="post">
+                    <h2>Eliminar libro</h2>
+
+                    <div class="form-group">
+                        <label for="idLibro">Ingrese el identificador del Libro:</label>
+                        <input type="text" id="idLibro" name="idLibro" required>
+                    </div>
+
+                    <button type="submit">Eliminar Libro</button>
+                </form>
+            </div>
+
+
+        </main>
+    </div>
+</div>
+</body>
+</html>
